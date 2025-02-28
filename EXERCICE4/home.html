@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+</head>
+<body class="h-screen flex flex-col">
+    <header class="flex justify-between items-center shadow-xl  h-15 px-4">
+        <div class="w-30">
+            <img src="images/Capture.PNG" class="object-contain">
+        </div>
+        <div class="font-bold">
+            Quick Post
+        </div>
+        <div>
+            <div class="flex justify-between gap-4">
+                <a href="myPosts.html"><button>My Posts</button></a>
+                <button id="logout">logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="m-3">
+        Your Blog Posts
+    </div>
+    <!-- <div class=" ">
+        <div class="border rounded bg-blue-300 overflow-y-auto flex-col w-full w-240" id="postContainer">
+
+        </div>
+    </div> -->
+
+    <div class="flex justify-center items center">
+        <div id="postForm" class="shadow-xl w-240 bg-gray-300 rounded-xl">
+            <h2 class="m-5 mb-10">Create a new Post</h2>
+            <div class="p-6">
+                <input type="text" placeholder="title" class=" rounded-xl border border-gray-500 w-full p-2 box-border bg-white" id="title"><br>
+                <textarea  id="description" rows="6" class="rounded-xl border border-gray-500 w-full p-2 box-border mt-4 bg-white" id="description" placeholder="Description"></textarea>
+
+                <div class="flex justify-end">
+                <button class="border p-4 w-40 rounded-xl shadow-xl bg-white hover:bg-blue-400 active:bg-blue-500 m-2 border-3 border-white font-bold text-blue-400 hover:text-white active:text-white" id="submit">Post</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="home.js" type="module"></script>
+</body>
+</html>
